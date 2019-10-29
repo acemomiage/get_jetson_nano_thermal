@@ -6,7 +6,7 @@ VAL_TYPES=('A0' 'CPU' 'GPU' 'PLL' 'PMIC-Die')
 function usage() {
     echo "${1} type"
     echo "Type is .."
-    for i in {0..4}; do
+    for i in $(seq 0 $((${#VAL_TYPES[*]}-1))); do
         echo "${i} : ${VAL_TYPES[$i]}"
     done
     exit
