@@ -1,6 +1,5 @@
 #!/bin/bash
 
-CMD="cat "
 SYS_PATH='/sys/devices/virtual/thermal/thermal_zone'
 VAL_TYPES=('A0' 'CPU' 'GPU' 'PLL' 'PMIC-Die')
 
