@@ -14,4 +14,4 @@ function usage() {
 
 [ ${#} -eq 1 ] || usage $0
 
-echo "$(cat ${SYS_PATH}${1}/temp) / 1000" | bc
+echo "scale=3;$(cat ${SYS_PATH}${1}/temp) / 1000" | bc
